@@ -18,7 +18,7 @@ function filterByQuery(query, animalsArray) {
     personalityTraitsArray.forEach(trait=> {
       // check trait against each animal in the filteredResults array
         /* It is initially a copy of the animalsArray, 
-          but here we're updating it for each trait in the .forEach() loop.
+          Here we're updating it for each trait in the .forEach() loop.
           For each trait being targeted by the filter, the filteredResults
           array will then contain only the enteries that contain the trait,
           so at the end it'll have an array of animals that have every one 
