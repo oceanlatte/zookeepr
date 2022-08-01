@@ -117,6 +117,16 @@
         "loving"
       ],
       "id": "11"
+    },
+    {
+      "name": "Stacy",
+      "species": "Hippo",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry",
+        "goofy"
+      ],
+      "id": "12"
     }
   ]
 }
