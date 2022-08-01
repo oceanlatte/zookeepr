@@ -11,6 +11,8 @@ const path = require('path');
 app.use(express.urlencoded({ extended: true}));
 // prase incoming JSON data
 app.use(express.json());
+// PUBLIC is the name of the directory the files are located in
+app.use(express.static('public')); 
 
 function filterByQuery(query, animalsArray) {
   let personalityTraitsArray = [];
@@ -116,6 +118,10 @@ app.post('/api/animals', (req, res) => {
   }
 
   res.json(req.body);
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 app.listen(PORT, () => {
