@@ -20,5 +20,8 @@
   "homepage": "https://github.com/oceanlatte/zookeepr#readme",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
